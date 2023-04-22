@@ -5,3 +5,5 @@ if a >= 10:
 else:
     print("ㄐㄐ")
 print(a)
+
+#1
