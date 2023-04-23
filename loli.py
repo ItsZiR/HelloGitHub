@@ -9,3 +9,5 @@ if age <= 12:
 else:
     print("not loli")
 print(age)
+def func():
+    return
