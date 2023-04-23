@@ -9,8 +9,4 @@ if age <= 12:
 else:
     print("not loli")
 print(age)
-<<<<<<< HEAD
-#1
-=======
 #branch test
->>>>>>> Update
