@@ -4,7 +4,7 @@
 #commit - git commit -m "(message)"
 import random
 age = random.randint(1,20)
-if a <= 12:
+if age <= 12:
     print("loli")
 else:
     print("not loli")
