@@ -14,14 +14,16 @@ void setup(){
   Voice.init();//初始化VoiceRecognition模組 
 
   //設定關鍵字, 漢語拼音, 最多50個
-  Voice.addCommand("guang meng",0);
-  Voice.addCommand("kai meng",1);
+  Voice.addCommand("guang men",0);
+  Voice.addCommand("kai men",1);
   Voice.addCommand("ce shi",2);
   Voice.addCommand("hei se gao ji che",3);
   Voice.addCommand("wa lei wa lei wa nuo zou mu",4);
   Voice.addCommand("na na cu no na ge ki wo",5);
   Voice.addCommand("wa lei wa lei wa ou bo ei tie yi lu",6);
   Voice.addCommand("jie li ko nuo ko suo ku wo",7);
+  Voice.addCommand("guang deng",8);
+  Voice.addCommand("kai deng",9);
 
   Voice.start();//開始辨識
   Serial.println("I'm Ready.");
@@ -49,7 +51,6 @@ void loop() {
     break;
 
     case 2:
-    pw1 = pw2 = pw3 = pw4 = false;
     Serial.println("Testing");
     lcd.clear();
     lcd.setCursor(0, 0);
@@ -57,6 +58,7 @@ void loop() {
     break;
 
     case 3:
+    pw1 = pw2 = pw3 = pw4 = false;
     Serial.println("114514");
     lcd.clear();
     lcd.setCursor(0, 0);
@@ -101,6 +103,14 @@ void loop() {
     lcd.setCursor(0, 1);
     lcd.print("Kosoku wo");
     pw4 = true;
+    break;
+
+    case 8:
+    lcd.noBacklight();
+    break;
+
+    case 9:
+    lcd.backlight();
     break;
 
     default: //如果都不是
