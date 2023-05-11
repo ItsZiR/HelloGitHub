@@ -65,4 +65,4 @@ class MyClient(discord.Client):
                 await msg.channel.send(embed=TNOKEmbed, mention_author=False)
         #------------------------------------------------    
 client = MyClient(intents=discord.Intents.all())
-client.run('MTA0MjMwNDMyNjcyODY4MzU0MA.G3esw1.2i1W4aMCILJqnelcOF1diKzgMvcsc-vCrnB4NA')
+client.run('token')
