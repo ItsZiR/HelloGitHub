@@ -1,3 +1,4 @@
 #ㄐㄐ
 # ignore all .txt files
 *.txt
+*.py
